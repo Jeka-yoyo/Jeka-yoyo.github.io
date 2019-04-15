@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/slick/slick-theme.css">
+    <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body class="stop-scrolling">
+    <main class="stop-scrolling main">
+        <section class="firstSection">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-2 col-md-3">
+                        <div class="firsSection-header">
+                            <div class="firsSection-header_logo">
+                                <img src="img/logo.png" alt="archlinux">
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /row-->
+                <div class="row">
+                    <div class="offset-md-2 col-md-9">
+                        <div class="firstSection-title">
+                            <div class="firstSection-title_main">
+                                узнайте<br>
+                                стоимость<br>
+                                проекта<br>
+                                онлайн
+                            </div>
+                            <div class="firstSection-title_other">
+                                Пройдите тест для расчета предварительной<br>
+                                стоимости проекта
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /row-->
+                <div class="row">
+                    <div class="offset-md-2 col-md-6">
+                        <a href="#secondSection" class="firstSection-button">
+                            начать тест
+                        </a>
+                    </div>
+                </div><!-- /row-->
+            </div> <!-- /container-->
+        </section>
+
+
+
+        <section id="secondSection" class="secondSection">
+            <div class="container">
+                <div class="secondSection-header">
+                    <div class="row">
+                        <div class="offset-md-2 col-md-3">
+                            <div class="secondSection-header-logo">
+                                <img src="img/logo.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <!--/row-->
+                    <div class="row">
+                        <div class="offset-md-2 col-md-9">
+                            <div class="secondSection-header-title">
+                                Выберите тип сайта:
+                            </div>
+                        </div>
+                    </div> <!-- /row-->
+                </div>
+                <div class="secondSection-types">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1200)">
+                                <img src="img/types/landing-page.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Landing<br>
+                                    pages
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1300)">
+                                <img src="img/types/web-site.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Сайт<br>
+                                    Визитка
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1400)">
+                                <img src="img/types/corporation-site.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Корпоративный<br>
+                                    сайт
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1500)">
+                                <img src="img/types/promo-site.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Промо<br>
+                                    сайт
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1600)">
+                                <img src="img/types/e-shop.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Интернет<br>
+                                    магазин
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a href="#thirdSection" class="secondSection-types_element" onclick="setPrice(1700)">
+                                <img src="img/types/dev-ops.png" alt="web-site">
+                                <div class="secondSection-types_element__title">
+                                    Сервисное<br>
+                                    приложение
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/container-->
+        </section>
+        <section id="thirdSection" class="thirdSection">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-md-2 col-md-3">
+                        <div class="thirdSection-header">
+                            <div class="thirdSection-header_logo">
+                                <img src="img/logo.png" alt="archlinux">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--/row-->
+
+                <div class="row">
+                    <div class="offset-md-2 col-md-9">
+                        <div class="thirdSection-title">
+                            <div class="thirdSection-title_main">
+                                стоимость<br>
+                                вашего<br>
+                                проекта<br>
+                                от <span id="price">0$</span>
+                            </div>
+                            <div class="thirdSection-title_other">
+                                Оставить заявку на точный рассчет:
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /row-->
+                <div class="row">
+                    <div class="offset-md-2 col-md-9">
+                        <div class="thirdSection-form">
+                            <form action="#">
+                                <div class="row d-flex justify-content-lg-between flex-lg-row flex-md-column">
+                                    <div class="col-md-5">
+                                        <input id="phone" type="text" placeholder="+38 (0..)" required>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="submit" value="заказать">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <aside class="aside">
+        <div class="aside-header">
+            <div class="aside-header_title">
+                Знакомтесь
+            </div>
+        </div>
+        <div class="aside-main">
+            <div class="aside-main_photo__wrap">
+                <div class="aside-main_photo"></div>
+            </div>
+            <div class="aside-main_title">
+                <div class="aside-main_title__name">
+                    Дмитрий Тищенко
+                </div>
+                <div class="aside-main_title__description">
+                    <span id="asideDescription">Ваш будущий<br>
+                        менеджер<br>
+                        проектов<br></span>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

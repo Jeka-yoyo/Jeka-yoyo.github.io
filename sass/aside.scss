@@ -1,0 +1,52 @@
+.aside {
+    background: #fff url(../img/aside-bg.png) bottom no-repeat;
+    &-header {
+        padding: 30px 0;
+        background-color: $hard-purple;
+        &_title {
+            font-family: $mr;
+            font-size: 25px;
+            text-align: center;
+            color: #fff;
+        }
+    }
+    &-main {
+        &_photo {
+            width: 220px;
+            height: 220px; 
+            border-radius: 50%;
+            background:url(../img/photo.png) center no-repeat;       
+        }
+        &_photo__wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 220px;
+            height: 220px; 
+            margin: 50px auto 0;
+            border-radius: 50%;
+            border: 2px solid #7559F9;
+            background-size: cover;
+        }
+        &_title {
+            margin-top: 50px;
+            text-align: center;
+            &__name {
+                margin: auto;
+                width: 90%;
+                color: #333333;
+                font-family: $mr;
+                font-size: 25px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #D1D1D1;
+            }
+            &__description {
+                line-height: 25px;
+                margin-top: 30px;
+                color :#909090;
+                font-family: $mr;
+                font-size: 25px;
+            }
+        }
+    }
+}
